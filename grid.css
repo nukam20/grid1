@@ -1,0 +1,83 @@
+*, *:after, *:before{
+    box-sizing: border-box; 
+}
+body{
+    background-color: #EEE;
+}
+h3{
+    text-align: left;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+span{
+    float: right;
+    margin-right: 15px;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* margin-top: 20px; */
+    background-color: white;
+    padding: 0 20px 30px 20px;
+    
+}
+section{
+    margin-top: 20px;
+}
+
+.box{
+    background-color: #EEE;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.small{
+    /* background-color: #EEE; */
+    height: 100px;
+    line-height: 100px;
+    /* text-align: center; */
+}
+[class*='col-']{
+    float: left;
+    padding: 0 15px;
+}
+
+.grid:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.col-25{
+    width: calc(100% / 4);
+}
+.col-12{
+    width: calc(100% / 8);
+    /* height: 100px;
+    line-height: 100px; */
+}
+.col-75{
+    width: 75%;
+}
+.col-25{
+    width: 25%;
+}
+.col-25{
+    width: 25%;
+}
+.col-75{
+    width: 75%;
+}
+.col-50{
+    width: calc(100% /2);
+}
+@media (max-width: 425px){
+    [class*='col-']{
+        width: 100%;
+    }
+    /* .box{
+        margin-bottom: 50px;
+    } */
+}
